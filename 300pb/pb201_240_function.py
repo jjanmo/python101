@@ -184,8 +184,6 @@ def convert_int(string_int):
     return int(''.join(new_string))
 
 
-# replace(',','')
+# replace(',','') : 위의 문제를 replace() 를 사용하면 좀 더 쉽게 해결가능! :)
 
 print(convert_int("1,234,567"))
-
-
