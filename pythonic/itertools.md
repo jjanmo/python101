@@ -30,7 +30,7 @@ for i in string1:
     for j in string2:
         result.append(i + j)
 
-' '.join(result)  # AX AY BX BY CX CY DX DY
+print(result) # ['AX', 'AY', 'BX', 'BY', 'CX', 'CY', 'DX', 'DY']
 ```
 
 ### pythonic solution
@@ -42,10 +42,14 @@ string1 = 'ABCD'
 string2 = 'XY'
 
 itertools.product(string1, string2)
-# ('A', 'X'), ('A', 'Y'), ('B', 'X'), ('B', 'Y'), ('C', 'X'), ('C', 'Y'), ('D', 'X'), ('D', 'Y')
+new_list = list(map(''.join, itertools.product(string1, string2)))
+
+print(new_list) # ['AX', 'AY', 'BX', 'BY', 'CX', 'CY', 'DX', 'DY']
 ```
 
-두가지 풀이의 코드가 완벽하게 일치한 결과값을 주지는 않는다. 하지만 <u>포인트는 곱집합을 구할 수 있다는 점</u>이다. 각각을 모두 반복하지 않고 간단한 메소드를 통해서 위와 같은 결과를 얻을 수 있다는 점이 위 코드의 장점이라고 할 수 있다.
+> 일반적인 풀이는 이중 for문을 사용하였다. 여기서는 문자열(iterable 객체는 모두 가능)이 2개지만 더 많아지면 많아지는 만큼 for문도 늘어나게 된다. 하지만 파이써닉한 풀이처럼 itertools의 product() 메소드를 이용하면 문자열의 개수에 상관없이 한 줄이면 모두 표현할 수 있게 된다. 와우~ 굉장히 간단 명료한 코드를 볼 수 있다. 😎
+
+<br />
 
 ```python
 import itertools
@@ -133,4 +137,4 @@ itertools.combinations(string1, 2)
 
 product()와 permutations()/combinations()와의 차이점은 무엇일까? 처음엔 `product()와 permutations()은 결과값이 비슷한 경우가 생길 수 있다` 라는 생각을 했다. 하지만 그것은 착각이였다. 가장 큰 차이점은 permutations()은 **하나의 iterable**에서의 순서에 따른 경우의 수를 나타낸다. 반면에 product()는 **두 개 이상의 iterable**에서의 모든 경우의 수를 나타낸다. combinations() 역시 permutations()과 마찬가지이다.
 
-> 수학적으로 이야기하면 product()는 `중복순열`을 말한다. 하지만 중요한 것은 위에서 말한 것처럼 가장 큰 차이점은 사용되는 상황이 다르다는 것을 알아두자.
+> 수학적으로 이야기하면 product()는 `중복순열`을 말한다. 하지만 중요한 것은 위에서 말한 것처럼 <u>가장 큰 차이점은 사용되는 상황이 다르다는 것</u>을 알아두자.
