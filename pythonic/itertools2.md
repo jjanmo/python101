@@ -38,4 +38,6 @@ def solution(mylist):
 
 ## pythonic solution
 
->
+```python
+
+```
