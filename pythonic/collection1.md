@@ -43,9 +43,9 @@ def solution(mystr):
   return answer
 ```
 
-> 잠깐1! 여기서 궁금해지는 자바스크립트 풀이 👀
+> 잠깐1! 여기서 궁금해지는 [자바스크립트 풀이](https://codesandbox.io/s/pb-tm9jc?file=/src/index.js) `⌗ 0422 디렉터리 collection1.js`
 
-> 잠깐2 여기서 궁금해지는 [lamda](./lamda.md) ?? 🤔
+> 잠깐2 여기서 궁금해지는 [lambda](./lambda.md) 란?
 
 ### pythonix solution
 
