@@ -1,4 +1,4 @@
-# Itertools
+# Itertools1
 
 > [공식 링크](https://python.flowdas.com/library/itertools.html)
 
