@@ -121,5 +121,89 @@ class Account:
         self.bank = "SC은행"
 
 
+# 281 ~ 290
+class Car:
+    def __init__(self, wheel, price):
+        self.wheel = wheel
+        self.price = price
+    
+    def log_info(self):
+        print('바퀴수 : ', self.wheel)
+        print('가격 : ' , self.price)
+
+my_car = Car(2, 1000)
+print(my_car)
+print(my_car.wheel)
+print(my_car.price)
 
 
+class Bike(Car):
+    def __init__(self, wheel, price, drivetrain):
+        super().__init__(wheel, price) # 부모의 속성을 가져와서 사용
+        self.drivetrain = drivetrain
+
+    def log_info(self):
+        super().log_info()
+        print(self.drivetrain)
+# my_bike = Bike(2, 100)
+# print(my_bike.wheel)
+# print(my_bike.price)
+
+my_bike = Bike(2, 100, '시마노')
+print(my_bike.price)
+print(my_bike.drivetrain)
+print('my bike')
+my_bike.log_info()
+
+class SuperCar(Car):
+    def __init__(self, wheel, price):
+        super().__init__(wheel, price)
+
+    # def log_info(self):
+    #     print('바퀴수 : ', self.wheel)
+    #     print('가격 : ' , self.price)
+
+car = SuperCar(4, 1000)
+print('super car')
+car.log_info()
+
+
+# method overriding
+class 부모:
+  def 호출(self):
+    print("부모 호출")
+
+class 자식(부모):
+  def 호출(self):
+    print("자식 호출")
+
+나 = 자식()
+나.호출()    # 자식 호출
+
+print('---------')
+
+
+# # constructor1
+# class 부모:
+#   def __init__(self):
+#     print("부모 생성")
+
+# class 자식(부모):
+#   def __init__(self): # 부모의 __inti__ overriding
+#     print("자식 생성")
+
+# 나 = 자식()  # 자식 생성
+
+print('---------')
+
+# constructor2
+class 부모:
+  def __init__(self):
+    print("부모 생성")
+
+class 자식(부모):
+  def __init__(self):
+    print("자식 생성")
+    super().__init__() # 부모 클래스에 있는 것을 (오버라이딩 시키지 않고) 호출하고 싶다면 명시적으로 적어줘야한다.
+
+나 = 자식()  # 자식 생성 부모 생성
