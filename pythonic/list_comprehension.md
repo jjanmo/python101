@@ -26,4 +26,4 @@ def solution(mylist):
   return [ number ** 2 for i in mylist if number % 2 == 0 ]
 ```
 
-파이썬에서는 조건문과 반복문을 한 줄로 처리할 수 있게 해주는 `list comprehension` 문법이다. 위의 코드처럼 한 줄로 표현할 수 있다. 원래 개념을 이해하기 위해선 그 단어의 뜻을 이해해야 하는데, `comprehension`이란 뜻은 이해, 표현등의 뜻을 갖고 있다. 하지만 이러한 번역적인 의미로는 이 문법을 이해하는게 쉽지 않은 것 같다. 그냥 영어를 영어로 이해하고 이러한 문법을 `comprehension` 이라고 사용한다라는 것에 익숙해지는 것이 맞다고 생각한다. 또한 comprehension은 list 뿐만 아니라 set, dictionery에서도 사용된다. 다음 comprehension 파트에서 이러한 부분들을 조금은 깊이 있게(?) 다뤄보도록 하자.
+파이썬에서는 조건문과 반복문을 한 줄로 처리할 수 있게 해주는 `list comprehension` 문법이다. 위의 코드처럼 한 줄로 표현할 수 있다. 원래 개념을 이해하기 위해선 그 단어의 뜻을 이해해야 하는데, `comprehension`은 이해, 표현등의 의미를 갖고 있다. 하지만 이러한 번역적인 의미로는 이 문법을 이해하는게 쉽지 않은 것 같다. 그냥 영어를 영어로 이해하고 이러한 문법을 `comprehension` 이라고 사용한다라는 것에 익숙해지는 것이 맞다고 생각한다. 또한 comprehension은 list 뿐만 아니라 set, dictionery에서도 사용된다. 다음 comprehension 파트에서 이러한 부분들을 조금은 깊이 있게(?) 다뤄보도록 하자.
