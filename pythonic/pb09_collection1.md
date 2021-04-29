@@ -1,4 +1,4 @@
-# Collection1
+# Collection
 
 ## 문제
 
