@@ -45,7 +45,7 @@ def solution(mylist):
 
 ## pythonic solution
 
-> solution1)
+> solution1
 
 ```python
 import itertools
@@ -55,7 +55,9 @@ def solution(mylist):
 
 ```
 
-> solution2)
+chain() 메소드는 인자로 받은 iterables가 모두 소진될 때까지 진행하는 iterator를 만든다. 즉 중첩 리스트(시퀀스)를 단일 리스트(시퀀스)로 만드는데 사용된다. 자바스크립트의 [flat()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/flat) 메소드와 유사하다.
+
+> solution2
 
 ```python
 import itertools
