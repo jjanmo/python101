@@ -34,10 +34,35 @@ def solution(mylist):
   return result
 ```
 
-> 자바스크립트와는 다르게 파이썬에서의 리스트의 합은 리스트의 결합이 된다. 자바스크립트에 익숙한 나에겐 익숙하지 않은 부분이다.
+> 위 풀이를 약간 업그레이드 시키면 아래와 같이 바꿀 수 있다.
+
+```python
+def solution(mylist):
+  return sum(mylist, [])
+```
+
+이 풀이를 이해하려면 sum()메소드에 대해 조금 더 자세히 알아야 한다. `sum(a, b)` 메소드는 **두 개의 인자**를 받을 수 있다. 첫번째 인자는 **iterable 객체**이고 두번째 인자는 `시작값`을 나타낸다.
 
 ## pythonic solution
 
+> solution1)
+
 ```python
+import itertools
+
+def solution(mylist):
+  return itertools.chain(*mylist)
 
 ```
+
+> solution2)
+
+```python
+import itertools
+
+def solution(mylist):
+  return itertools.chain.from_iterable(mylist)
+
+```
+
+chain() 과 chain.from_iterable()의 차이점은 인자로 들어갈 때, unpacking해주느냐 마냐의 차이가 있다.
