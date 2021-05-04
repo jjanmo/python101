@@ -47,7 +47,7 @@ def solution(mystr):
 
 > 잠깐2 여기서 궁금해지는 [lambda](./lambda.md) 란?
 
-### pythonix solution
+### pythonic solution
 
 ```
 
