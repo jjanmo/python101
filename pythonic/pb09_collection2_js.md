@@ -183,6 +183,7 @@ coins.sort((a, b) => {
 });
 
 /*
+OUTPUT
 [
   {symbol: "BTT", price: 10.1},
   {symbol: "DOGE", price: 718},
@@ -200,6 +201,7 @@ coins.sort((a, b) => {
 });
 
 /*
+OUTPUT
 [
   {symbol: "BCH", price: 1688000},
   {symbol: "BTT", price: 10.1},
@@ -248,7 +250,7 @@ OUTPUT
   {nickname: "jjanmo", age: 22},
   {nickname: "DOGEboy", age: 14},
   {nickname: "xxxyyyzzz", age: 14},
-  {nickname: "maxie", age: 7}
+  {nickname: "maxie", age: 7},
 ]
 */
 ```
@@ -279,7 +281,7 @@ OUTPUT
 
 **참고**
 
-아래와 같이 표현할 수 도 있다.
+아래와 같이 표현할수 도 있다.
 
 먼저, 학년에 의한 오름차순 정렬한다. 같은 학년인 경우 이름에 의한 오름차순으로 정렬한다.
 
