@@ -17,11 +17,11 @@ mystr 이라는 변수로 문자열이 입력된다. mystr에서 가장 많이 �
 ```js
 function solution(mystr) {
   const counter = {};
-  for (let i = 0; i < string.length; i++) {
-    if (counter[string[i]]) {
-      counter[string[i]]++;
+  for (let i = 0; i < mystr.length; i++) {
+    if (counter[mystr[i]]) {
+      counter[mystr[i]]++;
     } else {
-      counter[string[i]] = 1;
+      counter[mystr[i]] = 1;
     }
   }
 
