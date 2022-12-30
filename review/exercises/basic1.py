@@ -44,7 +44,7 @@ def print_sum(n):
     print(total)
 
 
-print_sum(10)
+# print_sum(10)
 
 
 def print_divisor(n):
@@ -56,4 +56,38 @@ def print_divisor(n):
     print(result)
 
 
-print_divisor(12)
+# print_divisor(12)
+
+# 중첩 반복문(2중 for문)
+
+# for i in range(5):
+#     print(f'i=>{i} :', sep='', end=' ')
+#     for j in range(5):
+#         print('j:', j, sep='', end=' ')
+#     print()
+
+def print_star1():
+    # sol1)
+    # for i in range(5):
+    #     for j in range(5):
+    #         if i >= j:
+    #             print('*', end=" ")
+    #     print()
+    # sol2)
+    for i in range(5):
+        for j in range(i + 1):
+            print('*', end=" ")
+        print()
+
+
+# print_star1()
+
+
+def print_star2():
+    for i in range(5):
+        for j in range(5 - i):
+            print('*', end=" ")
+        print()
+
+
+print_star2()
