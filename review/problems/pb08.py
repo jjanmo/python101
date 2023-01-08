@@ -2,6 +2,8 @@ def solution(numbers):
     result = []
     reversed_numbers = list(map(reverse, numbers))
 
+    # 아래코드를 따로 루프를 돌 필요 없네...
+    # reverse와 is_prime을 한번의 반복문으로 연산 가능!
     for number in reversed_numbers:
         if is_prime(number):
             result.append(number)
@@ -15,17 +17,44 @@ def reverse(number):
     return int(''.join(str_number))
 
 
-# 수정이 필요할까? 🤔
+# 수학적 연산을 이용한 reverse
+def reverse2(number):
+    result = 0
+    while number != 0:
+        tmp = number % 10
+        result = result * 10 + tmp  # 10을 곱해서 자리수는 높임
+        number //= 10  # 10을 나눔으로서 자리수는 낮춤
+
+    return result
+
+
+# 좀 더 효율적인 코드를 위한 반복문 수정 : 딱 절반까지만 돌면 된!
 def is_prime(number):
     if number == 1:
         return False
 
-    for i in range(2, number):
+    for i in range(2, number // 2 + 1):
         if number % i == 0:
             return False
     else:
         return True
 
+
+def checker(number):
+    tmp = reverse(number)
+    if is_prime(tmp):
+        return tmp
+
+
+def solution2(numbers):
+    result = list(map(checker, numbers))
+    for v in result:
+        if v is not None:
+            print(v, end=" ")
+    print()
+
+
+solution2([32, 55, 62, 3700, 250])
 
 print(solution([32, 55, 62, 3700, 250]))  # 23 73
 print(solution(
