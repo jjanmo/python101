@@ -35,3 +35,12 @@ solution(20, [
     'yes',
     'goodboy',
 ])
+
+
+# 단순 문자열 한개가 들어왔다고 가정
+def solution2(string):
+    new_str = string.lower()
+    if new_str == new_str[::-1]:  # [::-1] 거꾸로 슬라이싱
+        print('회문이다')
+    else:
+        print('회문 아니다')
