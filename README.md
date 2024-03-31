@@ -44,6 +44,6 @@
 
 ## Step4 [-ing]
 
-> in `review` directory
+> in `my-first-python` directory
 
 > [나의 첫 파이썬](http://www.yes24.com/Product/Goods/90900588?OzSrank=1) 을 통해서 빠르게 복습하기!
