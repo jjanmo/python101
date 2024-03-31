@@ -39,5 +39,11 @@
   > 강의에서 만드는 JobScraping페이지는 [dev-recruit](https://github.com/jjanmo/dev-recruit) 라는 레포에서 진행하였다.
 - [파이썬 알고리즘 문제 풀이](https://www.inflearn.com/course/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8)
   > 어느정도 난이도까지 풀지모르겠지만, 문제를 푸는 목적은 파이썬으로 생각을 자유자재로 구현하는 것이 목표!
-  
+
 </details>
+
+## Step4 [-ing]
+
+> in `review` directory
+
+> [나의 첫 파이썬](http://www.yes24.com/Product/Goods/90900588?OzSrank=1) 을 통해서 빠르게 복습하기!
