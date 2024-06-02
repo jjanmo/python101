@@ -10,3 +10,14 @@ def get_min(array):
 
 
 print(get_min(arr))
+
+
+def get_min1(array):
+    min_value = arr[0]
+    for i in range(1, len(array)):
+        if min_value > array[i]:
+            min_value = array[i]
+    return min_value
+
+
+print(get_min1(arr))
