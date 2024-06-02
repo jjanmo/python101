@@ -42,8 +42,16 @@
 
 </details>
 
-## Step4 [-ing]
+## Step3-1 : Review + Algorithm Study
 
-> in `my-first-python` directory
+>  in `algorithm` directory
+ 
+- 파이썬 리뷰와 알고리즘을 동시에 복습해보자. 이전에 끝내지 못했던 알고리즘 강의를 통해서 파이썬의 구현능력을 복습하면서 알고리즘 문제에 익숙해지는 시간을 갖고자 한다. 일석이조의 효과를 노린닷! 🚀
 
-> [나의 첫 파이썬](http://www.yes24.com/Product/Goods/90900588?OzSrank=1) 을 통해서 빠르게 복습하기!
+<details>
+  <summary>2024년 6월 ~ </summary>
+  
+- [파이썬 알고리즘 문제 풀이](https://www.inflearn.com/course/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8)
+
+</details>
+
