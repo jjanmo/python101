@@ -41,17 +41,3 @@
   > 어느정도 난이도까지 풀지모르겠지만, 문제를 푸는 목적은 파이썬으로 생각을 자유자재로 구현하는 것이 목표!
 
 </details>
-
-## Step3-1 : Review + Algorithm Study
-
->  in `algorithm` directory
- 
-- 파이썬 리뷰와 알고리즘을 동시에 복습해보자. 이전에 끝내지 못했던 알고리즘 강의를 통해서 파이썬의 구현능력을 복습하면서 알고리즘 문제에 익숙해지는 시간을 갖고자 한다. 일석이조의 효과를 노린닷! 🚀
-
-<details>
-  <summary>2024년 6월 ~ </summary>
-  
-- [파이썬 알고리즘 문제 풀이](https://www.inflearn.com/course/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8)
-
-</details>
-
