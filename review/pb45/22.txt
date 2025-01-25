@@ -1,0 +1,5 @@
+The adjective "deep" in deep learning refers to the use of multiple layers in the network. 
+Early work showed that a linear perceptron cannot be a universal classifier,but 
+that a network with a nonpolynomial activation function with one hidden layer of unbounded width can. 
+Deep learning is a modern variation which is concerned with an unbounded number of layers of bounded size,which
+permits practical application and optimized implementation,while retaining theoretical
