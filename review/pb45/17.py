@@ -30,3 +30,15 @@ print(add(30, 40, 20))
 
 # 참고
 # https://levelup.gitconnected.com/5-types-of-arguments-in-python-function-definition-e0e2a2cafd29
+
+
+def sum(*args):
+    print(args, type(args))  # 기본적으로  *args로 가변 위치 인자를 받으면 "튜플"로 처리
+    total = 0
+    for i in args:
+        total += i
+    return total
+
+
+print(sum(10))
+print(sum(10, 20))
