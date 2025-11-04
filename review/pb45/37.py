@@ -10,13 +10,16 @@ d = {
     "South Korea": 200,
 }
 
-country = input()
-lowercase_countries = list(map(str.lower, d.keys()))
-lowercase_input = country.lower()
 
-lower_dict = {k.lower(): v for k, v in d.items()}  # kick!!
+def search_country(text):
+    try:
+        lower_dict = {k.lower(): v for k, v in d.items()}  # kick!!
+        lower_text = text.lower()
+        return lower_dict[lower_text]
+    except:
+        print("No results were found for your search")
 
-if lowercase_input in lowercase_countries:
-    print(lower_dict[lowercase_input])
-else:
-    print("No results were found for your search")
+
+text = input()
+
+search_country(text)
