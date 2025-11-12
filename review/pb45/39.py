@@ -4,5 +4,12 @@ import random
 
 characters = "abcdefghijklnmopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?"
 
-coupon_code = "".join(random.sample(list(characters), 6))
-print(coupon_code)
+coupon_codes = []
+
+while len(coupon_codes) < 5:
+    coupon_code = "".join(random.sample(list(characters), 6))
+    print(coupon_code)
+    if coupon_code not in coupon_codes:
+        coupon_codes.append(coupon_code)
+
+print(coupon_codes)
