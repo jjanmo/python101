@@ -1,0 +1,50 @@
+Russia,17075200
+Canada,9984670
+United States of America,9826630
+China,1385566537
+Brazil,200361925
+Australia,23342553
+India,1252139596
+Argentina,41446246
+Kazakhstan,16440586
+Algeria,39208194
+Congo,67513677
+Greenland,56987
+Saudi Arabia,28828870
+Mexico,122332399
+Indonesia,249865631
+Sudan,37964306
+Libya,6201521
+Iran,77447168
+Mongolia,2839073
+Peru,30375603
+Chad,12825314
+Niger,17831270
+Angola,21471618
+Mali,15301650
+South Africa,52776130
+Colombia,48321405
+Ethiopia,94100756
+Bolivia,10671200
+Mauritania,3889880
+Egypt,82056378
+Tanzania,49253126
+Nigeria,173615345
+Venezuela,30405207
+Namibia,2303315
+Pakistan,182142594
+Mozambique,25833752
+Turkey,74932641
+Chile,17619708
+Zambia,14538640
+Myanmar,53259018
+Afghanistan,30551674
+South Sudan,11296173
+France,64291280
+Somalia,10495583
+Central African Republic,4616417
+Ukraine,45238805
+Botswana,2021144
+Madagascar,22924851
+Kenya,44353691
+Yemen,24407381
