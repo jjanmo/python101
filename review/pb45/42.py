@@ -7,6 +7,8 @@ PY 파일 정보 : ['file12.py', 'file13.py', 'file17.py', 'file3.py', 'file4.py
 """
 
 from pathlib import Path
+import os
+import glob
 
 
 def solution(folder_path):
@@ -30,3 +32,27 @@ def format(image_list, py_list):
 
 image_list, py_list = solution("./42")
 format(image_list, py_list)
+
+
+def solution2(path):
+    files = os.listdir(
+        path
+    )  # 파일인지 폴더인지 구분이 안됨 > 여기서는 파일이라고 가정하고 품
+    png_files = sorted(list(filter(lambda f: f.endswith("png"), files)))
+    python_files = sorted(list(filter(lambda f: f.endswith("py"), files)))
+    format(png_files, python_files)
+
+
+solution2("./42")
+
+
+def solution3():
+    # glob.glob(파일경로(+패턴), recursive여부=False) > 리턴값 매칭되는 파일, 디렉토리 경로들의 리스트 반환
+    # ex. ['./42/file19.png', './42/file6.png', './42/file10.png', './42/file11.png']
+
+    png_files = sorted(list(map(lambda s: s.split("/")[-1], glob.glob("./42/*.png"))))
+    python_files = sorted(list(map(lambda s: s.split("/")[-1], glob.glob("./42/*.py"))))
+    format(png_files, python_files)
+
+
+solution3()
