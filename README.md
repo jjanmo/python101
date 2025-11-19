@@ -20,7 +20,7 @@
 
 <br />
 
-# Review Part
+## Review Part
 
 > in `review` directory
 
@@ -52,11 +52,18 @@
 </details>
 
 <details>
-  <summary>2025년 ~ </summary>
+  <summary>2025년</summary>
 
 나의 주력 언어가 아니다보니 잊게 되고, 다시 파이썬을 보려고하면 빠르게 복습해주는 시간이 항상 필요하다고 느낀다. 그래서 기존에 Step으로 나누었던 부분을 그냥 **리뷰 파트**로 분리하였다. 언제든 파이썬으로 돌아오면, 이 곳에서 복습할 수 있도록...
 
 - in `review > pb45` directory
+
   - [강의](https://www.inflearn.com/course/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%AC%B8%EB%B2%95-%EC%8B%A4%EC%8A%B5-%EC%9D%B8%ED%94%84%EB%9F%B0-%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90) 자료에서 제공해주는 45가지 기초 실습 문제를 풀어본다.
+
+- in `review > problem_solving`
+
+  - [파이썬 알고리즘 문제 풀이](https://www.inflearn.com/course/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8)에서 나오는 문제들을 풀어본다.
+
+  - 예전에 파이썬 구현력 향상을 위해서 앞부분 문제들을 구현했었다. 지금은 코딩테스트 공부를 위해서 다시 문제들을 풀어볼 예정이다. 같은 코드를 자바스크립트로도 구현해볼 것이다.(in [ds-algo](https://github.com/jjanmo/ds-algo))
 
 </details>
