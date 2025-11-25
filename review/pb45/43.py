@@ -45,3 +45,20 @@ def solution2(base_path, result):
 
 solution2("./43", result)
 print(result)
+
+
+def solution3():
+    for results in os.walk("./43"):
+        """
+        os.walk("./43") 의 결과값 : 튜플
+        ('./43', ['sub1', 'sub2'], ['file2.txt', 'file8.py', 'file1.txt', 'file5.txt', 'file7.txt', 'file20.txt', 'file19.png', 'file12.py', 'file13.py', 'file3.py', 'file17.py', 'file6.png', 'file10.png', 'file4.py', 'file18.dll', 'file11.png', 'file9.txt', 'file16.bin', 'file14.txt', 'file15.txt'])
+        ('./43/sub1', [], ['file1.txt', 'file6.bin', 'file2.py', 'file3.png', 'file7.png', 'file4.py', 'file5.py'])
+        ('./43/sub2', [], ['file7.txt', 'file6.txt', 'file2.py', 'file3.png', 'file4.png', 'file1.py', 'file5.py', 'file8.txt'])
+
+        > (루트경로, 경로에서 존재하는 디렉토리들, 경로에서 존재하는 파일들)
+        이 내용을 이용하여 풀이할 수 있음 : "경로에서 존재하는 파일들" 이용
+        """
+        print(results)
+
+
+solution3()
