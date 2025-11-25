@@ -2,6 +2,7 @@
 # Recursive File Extension Checker
 
 import glob
+import os
 
 
 def format(txt_files, png_files):
@@ -24,3 +25,23 @@ def solution1():
 
 
 solution1()
+
+
+result = {"txt_files": [], "png_files": []}
+
+
+# 재귀를 이용하는 방법
+def solution2(base_path, result):
+    for file_name in os.listdir(base_path):
+        full_path = os.path.join(base_path, file_name)
+        if os.path.isdir(full_path):
+            solution2(full_path, result)
+        if os.path.isfile(full_path):
+            if file_name.endswith(".txt"):
+                result["txt_files"].append(file_name)
+            elif file_name.endswith(".png"):
+                result["png_files"].append(file_name)
+
+
+solution2("./43", result)
+print(result)
