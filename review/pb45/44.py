@@ -3,6 +3,9 @@ while True:
 
     if key == "1":
         with open("./44.txt", "a+") as f:
+            # "a+" (추가+읽기 모드)에선 파일 포인터가 파일의 끝에 위치하기 때문에
+            # 이미 내용이 있는 경우, 컨텐츠를 제대로 읽을 수 없음.
+            # 이런 문제 해결을 위해서 포인터를 앞에 위치시키기 위한 작업
             f.seek(0)
             content = f.read()
             if content != "":
@@ -23,5 +26,5 @@ while True:
             print(">>>>>>")
             print("\n✅ 파일 읽기 완료")
     elif key == "3":
-        print(key)
+        print("프로그램 종료")
         break
