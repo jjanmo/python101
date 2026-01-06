@@ -47,7 +47,7 @@ def find_item_by_phone(phone, data):
     return None
 
 
-def get_menu():
+def print_menu():
     print("--------MENU--------")
     print("1. List Phone Book")
     print("2. Add a New Member")
@@ -55,7 +55,7 @@ def get_menu():
     print("4. Program Exit")
 
 
-def get_phonebook():
+def print_phonebook():
     for item in phonebook.values():
         print(f"이름: {item['name']}")
         print(f"번호: {item['phone']}")
@@ -95,10 +95,10 @@ def delete_member():
 
 def main():
     while True:
-        get_menu()
+        print_menu()
         num = input("번호 선택: ")
         if num == "1":
-            get_phonebook()
+            print_phonebook()
         elif num == "2":
             add_member()
         elif num == "3":
